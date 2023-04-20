@@ -43,8 +43,6 @@ describe("Product repository test", () => {
       })
     ).toJSON();
 
-    console.log("productDb", productDb);
-
     expect(productProps.id.id).toEqual(productDb.id);
     expect(productProps.name).toEqual(productDb.name);
     expect(productProps.description).toEqual(productDb.description);
@@ -66,8 +64,6 @@ describe("Product repository test", () => {
     });
 
     const product = await productRepository.find("1");
-
-    console.log("product", product);
 
     expect(product.name).toEqual("Product 1");
     expect(product.description).toEqual("Product 1 description");
