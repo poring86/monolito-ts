@@ -11,4 +11,5 @@ export interface AddClientOutputDto {
   email: string;
   address: string;
   createdAt: Date;
+  updatedAt: Date;
 }
