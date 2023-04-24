@@ -7,6 +7,6 @@ export interface FindClientOutputDto {
   name: string;
   email: string;
   address: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
