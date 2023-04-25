@@ -28,11 +28,11 @@ describe("InvoiceFacade test", () => {
     const input = {
       name: "Invoice 1",
       document: "Document 1",
-      street: "Main Street",
+      street: "Street",
       number: "123",
-      complement: "Next to the bank",
-      city: "New York",
-      state: "New York",
+      complement: "Complement",
+      city: "City",
+      state: "State",
       zipCode: "122343404",
       items: [
         {
