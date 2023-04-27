@@ -32,7 +32,13 @@ describe("Client repository test", () => {
       id: "1",
       name: "Client 1",
       email: "x@x.com",
-      address: "Address 1",
+      document: "client.document",
+      street: "client.street",
+      number: "client.number",
+      complement: "client.complement",
+      city: "client.city",
+      state: "client.state",
+      zipCode: "client.zipCode",
     };
 
     await facade.add(input);
@@ -42,7 +48,10 @@ describe("Client repository test", () => {
     expect(client).toBeDefined();
     expect(client.name).toBe(input.name);
     expect(client.email).toBe(input.email);
-    expect(client.address).toBe(input.address);
+    expect(client.document).toBe(input.document);
+    expect(client.street).toBe(input.street);
+    expect(client.number).toBe(input.number);
+    expect(client.complement).toBe(input.complement);
   });
 
   it("should find a client", async () => {
@@ -52,7 +61,13 @@ describe("Client repository test", () => {
       id: "1",
       name: "Client 1",
       email: "x@x.com",
-      address: "Address 1",
+      document: "client.document",
+      street: "client.street",
+      number: "client.number",
+      complement: "client.complement",
+      city: "client.city",
+      state: "client.state",
+      zipCode: "client.zipCode",
     };
 
     await facade.add(input);

@@ -6,7 +6,7 @@ import BaseEntity from "../../../modules/shared/domain/entity/base.entity";
 type OrderProps = {
   id?: Id;
   client: Client;
-  products: Product;
+  products: Product[];
   status?: string;
 };
 
@@ -18,6 +18,7 @@ export default class Order extends BaseEntity {
   constructor(props: OrderProps) {
     super(props.id);
     this._client = props.client;
+    this._products = props.products;
   }
 
   approved() {
